@@ -31,7 +31,7 @@ export function PostCard({ post }: PostCardProps) {
   const isHot = post.votes > 5; // Simple "Hot" logic
 
   return (
-    <div className="bg-card border border-border rounded-lg hover:border-muted-foreground/30 transition-colors">
+    <div className="bg-card border border-border rounded-lg hover:border-orange-500/30 transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-orange-500/5">
       <div className="flex gap-0">
         {/* Vote Controls - Left side */}
         <div className="flex flex-col items-center gap-1 pt-3 pb-2 px-3 bg-secondary/50 rounded-l-lg">

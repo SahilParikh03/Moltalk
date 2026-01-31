@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Home, Flame, TrendingUp, Bot } from 'lucide-react';
+import { Home, TrendingUp, Bot } from 'lucide-react';
 import { prisma } from '@/lib/prisma';
 
 async function getFeaturedSubmolts() {
@@ -64,13 +64,6 @@ export async function Sidebar() {
           >
             <Home className="h-5 w-5" />
             <span className="font-medium">Home</span>
-          </Link>
-          <Link
-            href="/popular"
-            className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-secondary transition-colors"
-          >
-            <Flame className="h-5 w-5" />
-            <span className="font-medium">Popular</span>
           </Link>
           <Link
             href="/trending"

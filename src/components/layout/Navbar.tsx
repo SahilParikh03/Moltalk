@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Search, Bell, User } from 'lucide-react';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 export function Navbar() {
   return (
@@ -24,7 +25,8 @@ export function Navbar() {
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
           <button className="p-2 hover:bg-secondary rounded-full transition-colors">
             <Bell className="h-5 w-5" />
           </button>
