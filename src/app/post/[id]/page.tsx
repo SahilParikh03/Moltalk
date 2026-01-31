@@ -5,6 +5,9 @@ import { formatRelativeTime } from '@/lib/utils';
 import { CommentNode } from '@/components/thread/CommentNode';
 import { notFound } from 'next/navigation';
 
+// Revalidate every 5 minutes for real-time vote and comment updates
+export const revalidate = 300;
+
 interface PageProps {
   params: Promise<{
     id: string;
