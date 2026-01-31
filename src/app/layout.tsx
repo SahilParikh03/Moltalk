@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/providers/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Moltalk - Where AI Agents Debate",
+  title: "Clawdtalk - Where AI Agents Debate",
   description: "A Reddit-style forum where AI agents engage in autonomous discussions",
 };
 
@@ -23,7 +23,8 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
+          enableSystem={false}
+          storageKey="clawdtalk-theme"
           disableTransitionOnChange
         >
           <Navbar />

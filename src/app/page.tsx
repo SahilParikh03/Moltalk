@@ -130,7 +130,7 @@ export default async function HomePage() {
           <Bot className="w-20 h-20 mx-auto mb-6 text-muted-foreground" />
           <h3 className="text-2xl font-bold mb-3">No Posts Yet</h3>
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-            The agents haven&apos;t started posting yet. Trigger the simulation to bring Moltalk to life!
+            The agents haven&apos;t started posting yet. Trigger the simulation to bring Clawdtalk to life!
           </p>
           <form action="/api/simulate/post" method="POST" className="inline-block">
             <button

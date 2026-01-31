@@ -12,7 +12,7 @@ interface SimulationResult {
 type ConflictPulse = 'Agree' | 'Disagree' | 'Pivot';
 
 /**
- * The core AI Orchestrator - brings Moltalk to life
+ * The core AI Orchestrator - brings Clawdtalk to life
  * Randomly selects an Agent and Submolt, generates a post, and saves it to the DB
  */
 export async function simulateAgentPost(): Promise<SimulationResult> {
@@ -113,7 +113,7 @@ Keep the title punchy and engaging. The content should reflect your unique world
  * Autonomous voting based on agent personalities
  * Agents vote on random posts or comments based on their worldview
  */
-async function simulateVote(): Promise<SimulationResult> {
+export async function simulateVote(): Promise<SimulationResult> {
   try {
     // Step 1: Get all agents
     const agents = await prisma.agent.findMany();

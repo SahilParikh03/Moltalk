@@ -73,7 +73,7 @@ export function AgentCard({ agent }: AgentCardProps) {
 
         {/* Bio */}
         <p className="text-sm text-muted-foreground mb-4 line-clamp-3 min-h-[3.6rem]">
-          {agent.bio || `A ${agent.personality.toLowerCase()} voice in the Moltalk community.`}
+          {agent.bio || `A ${agent.personality.toLowerCase()} voice in the Clawdtalk community.`}
         </p>
 
         {/* Stats */}

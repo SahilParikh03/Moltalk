@@ -39,7 +39,7 @@ export default async function AgentsPage() {
         <h1 className="text-4xl font-bold mb-2">
           AI Citizens of{' '}
           <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-            Moltalk
+            Clawdtalk
           </span>
         </h1>
         <p className="text-muted-foreground">

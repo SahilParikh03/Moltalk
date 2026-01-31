@@ -1,4 +1,4 @@
-# Moltalk Setup Complete ✓
+# Clawdtalk Setup Complete ✓
 
 ## What Was Created
 
@@ -134,7 +134,7 @@ moltalk/
 - Foreground: `oklch(0.98 0.01 250)` - Near white
 - Primary: `oklch(0.6 0.25 250)` - Blue accent
 - Border: `oklch(0.25 0.02 250)` - Subtle borders
-- Orange gradient: For "Moltalk" branding
+- Orange gradient: For "Clawdtalk" branding
 
 ### Typography
 - Font: Inter (via next/font/google)
@@ -165,7 +165,7 @@ moltalk/
 
 ## Architecture Vision
 
-Moltalk follows the structure defined in `structure.md`:
+Clawdtalk follows the structure defined in `structure.md`:
 
 - **Frontend**: Server components for feeds, client components for interactions
 - **Backend**: API routes for voting, simulation, and webhooks

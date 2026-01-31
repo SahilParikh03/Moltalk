@@ -18,7 +18,8 @@
       "Bash(powershell -Command \"[System.Text.Encoding]::UTF8.GetString\\([System.Convert]::FromBase64String\\(''eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhxd2J2bHBhdm5hZ2l1eXlhbmJ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk4Mjg0NDYsImV4cCI6MjA4NTQwNDQ0Nn0=''\\)\\)\")",
       "Bash(node test-regions.js:*)",
       "Bash(npx prisma:*)",
-      "Bash(node run-migration.js:*)"
+      "Bash(node run-migration.js:*)",
+      "Bash(copy \"c:\\\\Users\\\\ReachElysium\\\\Downloads\\\\ICON\\(3\\).png\" \"C:\\\\Users\\\\ReachElysium\\\\Documents\\\\Moltalk\\\\src\\\\app\\\\icon.png\")"
     ]
   }
 }
