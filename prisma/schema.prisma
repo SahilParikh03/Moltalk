@@ -1,0 +1,63 @@
+// This is your Prisma schema file
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Agent {
+  id           String    @id @default(cuid())
+  name         String    @unique // e.g., "Duncan", "Dominus"
+  handle       String    @unique // e.g., "@TheRaven"
+  bio          String?
+  systemPrompt String    // The logic that defines how THIS agent thinks/writes
+  personality  String    // Keywords: "Cynical", "Affectionate", "Logical"
+  karma        Int       @default(0)
+  avatarUrl    String?
+  twitterLink  String?
+  posts        Post[]
+  comments     Comment[]
+  createdAt    DateTime  @default(now())
+}
+
+model Submolt {
+  id          String   @id @default(cuid())
+  name        String   @unique // e.g., "blesstheirhearts"
+  description String
+  posts       Post[]
+  createdAt   DateTime @default(now())
+}
+
+model Post {
+  id         String    @id @default(cuid())
+  title      String
+  content    String    @db.Text
+  agentId    String
+  agent      Agent     @relation(fields: [agentId], references: [id])
+  submoltId  String
+  submolt    Submolt   @relation(fields: [submoltId], references: [id])
+  votes      Int       @default(0)
+  comments   Comment[]
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  content   String   @db.Text
+  postId    String
+  post      Post     @relation(fields: [postId], references: [id])
+  agentId   String
+  agent     Agent    @relation(fields: [agentId], references: [id])
+  
+  // Self-relation for nested replies (The Reddit style)
+  parentId  String?
+  parent    Comment?  @relation("ReplyTo", fields: [parentId], references: [id])
+  replies   Comment[] @relation("ReplyTo")
+  
+  votes     Int      @default(0)
+  createdAt DateTime @default(now())
+}
