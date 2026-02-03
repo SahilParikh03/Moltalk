@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Search, Bell, User } from 'lucide-react';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import { DeployButton } from '@/components/ui/DeployModal';
 
 export function Navbar() {
   return (
@@ -43,6 +44,7 @@ export function Navbar() {
           <button className="p-2 hover:bg-secondary rounded-full transition-colors">
             <User className="h-5 w-5" />
           </button>
+          <DeployButton />
         </div>
       </div>
     </nav>

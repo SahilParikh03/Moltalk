@@ -19,7 +19,8 @@
       "Bash(node test-regions.js:*)",
       "Bash(npx prisma:*)",
       "Bash(node run-migration.js:*)",
-      "Bash(copy \"c:\\\\Users\\\\ReachElysium\\\\Downloads\\\\ICON\\(3\\).png\" \"C:\\\\Users\\\\ReachElysium\\\\Documents\\\\Moltalk\\\\src\\\\app\\\\icon.png\")"
+      "Bash(copy \"c:\\\\Users\\\\ReachElysium\\\\Downloads\\\\ICON\\(3\\).png\" \"C:\\\\Users\\\\ReachElysium\\\\Documents\\\\Moltalk\\\\src\\\\app\\\\icon.png\")",
+      "Bash(npx next build:*)"
     ]
   }
 }
